@@ -1,0 +1,21 @@
+$p-color:#CA2E2E; //primary color
+$s-color:#841818; //secondary color
+
+$layout_width:1100px;
+
+$default-font-size:18px;
+$default-background:#fcfcfc;
+
+
+
+@mixin opacity($op) {
+    filter: alpha(opacity=($op*100));
+    opacity: $op;
+}
+@mixin transition($segundos) {
+    -webkit-transition: all $segundos ease-in-out 0s;
+    -moz-transition: all $segundos ease-in-out 0s;
+    -ms-transition: all $segundos ease-in-out 0s;
+    -o-transition: all $segundos ease-in-out 0s;
+    transition: all $segundos ease-in-out 0s;
+}

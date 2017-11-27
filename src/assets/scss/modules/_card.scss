@@ -1,0 +1,46 @@
+.card{
+	width:100%;
+	margin:15px auto;
+	height: 165px;
+	cursor:pointer;
+	position: relative;
+	-webkit-perspective: 500;
+	overflow:hidden;
+	border-radius:2px;	
+	color:#fff;
+	//box-shadow:0 0 2px #000;
+	&__flip{
+	  @include transition(0.5s);
+	  @extend .l-max-width-height;	  
+	  border:solid 1px #c9c9c9;
+	  background:$p-color;
+	  position:relative;
+	  &__desc{
+		position:absolute;
+		width:100%;
+		top: 33%;
+    		left: 13px;
+		font-size:20px;	
+		transform: rotate(315deg);
+	  }
+	  &__back{
+	  	color:#fff;
+	  	@include transition(0.5s);
+	  	@include opacity(0);
+	  	@extend .l-max-width-height;
+	  	width:100%;
+	  	font-size:60px;
+	  	padding:40px 0;
+	  	position: absolute;
+  		transform: rotateY( 180deg );
+	  }
+	}
+	&__is_turned{
+		.card__flip{
+			transform: rotateY( 180deg );
+			&__back{
+				@include opacity(1);
+			}
+	  	}
+	}
+}

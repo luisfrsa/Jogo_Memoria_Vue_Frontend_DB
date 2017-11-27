@@ -1,0 +1,20 @@
+*{
+	box-sizing: border-box;
+}
+
+html,body{
+	padding:0;
+	margin:0;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size:$default-font-size;
+    background:$default-background;
+}
+ul,li{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+h1{
+	text-align:center;
+}

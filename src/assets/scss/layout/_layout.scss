@@ -1,0 +1,24 @@
+.l-left{
+	float:left;
+	text-align:left;
+}
+.l-right{
+	text-align:right;
+	float:right;
+}
+.l-align-center{
+	text-align:center;
+}
+.l-p-color{
+	color:$p-color;
+}
+.l-s-color{
+	color:$s-color;
+}
+.l-max-width-height{
+	width:100%;
+	height:100%;
+}
+.l-cursor-pointer{
+	cursor:pointer;
+}
